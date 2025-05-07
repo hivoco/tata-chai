@@ -567,7 +567,7 @@ const PrimeVideoVoiceAssistant = () => {
       className="flex flex-col h-svh bg-black text-white p-3 bg-no-repeat"
     >
       {/* Top Navigation Bar */}
-      <nav className="bg-black p-4 flex items-center justify-between border-b border-gray-800">
+      <nav className=" p-4 flex items-center justify-between ">
         <div className="flex items-center space-x-6">
           <h1 className="text-2xl font-bold" style={{ color: "#2162a1" }}>
             prime video
@@ -691,7 +691,7 @@ const PrimeVideoVoiceAssistant = () => {
               !transcript &&
               !response && (
                 <p className="text-xs text-blue-600 mt-1 opacity-70">
-                  Ask anything about Panchayat Series
+                  Ask me about my plans for Phulera.
                 </p>
               )}
           </div>
