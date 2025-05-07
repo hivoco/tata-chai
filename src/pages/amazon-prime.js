@@ -560,7 +560,7 @@ const PrimeVideoVoiceAssistant = () => {
   return (
     <div
       style={{
-        backgroundImage: 'url("/netaJi.png")',
+        backgroundImage: 'url("/NetaJi.png")',
         backgroundSize: "contain",
         backgroundPosition: "center",
       }}
