@@ -248,7 +248,9 @@ const PrimeVideoVoiceAssistant = () => {
     if (!isListening && !isLoading && !isPlaying && recognitionRef.current) {
       // If we're not listening, loading, or playing, restart listening
       setTimeout(() => {
-        recognitionRef.current.start();
+        if(!recognitionRef.current){
+          recognitionRef.current.start();
+        }
         setIsListening(true);
       }, 300);
     }
@@ -564,7 +566,7 @@ const PrimeVideoVoiceAssistant = () => {
         backgroundSize: "contain",
         backgroundPosition: "center",
       }}
-      className="flex flex-col h-svh bg-black text-white p-3 bg-no-repeat"
+      className="flex flex-col h-svh  bg-cyan-500/15  text-white p-3 bg-no-repeat"
     >
       {/* Top Navigation Bar */}
       <nav className=" p-4 flex items-center justify-between ">
@@ -699,7 +701,7 @@ const PrimeVideoVoiceAssistant = () => {
 
         {/* Voice Assistant Response Area - Only visible when there's activity */}
         {(transcript || response) && (
-          <div className="bg-gray-900 bg-opacity-90 p-6 max-w-5xl rounded-xl border border-gray-800 shadow-2xl">
+          <div className="bg-gray-900 bg-opacity-90 p-6 absolute bottom-10 max-w-5xl rounded-xl border border-gray-800 shadow-2xl">
             <div className="max-w-3xl mx-auto">
               {/* Conversation header */}
               <div className="flex items-center mb-4 pb-2 border-b border-gray-800">
