@@ -586,7 +586,7 @@ const AirAsiaVoiceAssistant = () => {
       {/* Voice Assistant Main Area */}
       <div className="relative z-10 h-full flex justify-center items-center flex-col gap-10">
         {/* Beautiful Mic Button with Effects */}
-        <div className="flex flex-col items-center relative">
+        <div className="flex flex-col items-center relative -top-24">
           {/* Glowing background effect */}
           <div
             className={`absolute inset-0 rounded-full blur-lg transition-opacity duration-500 ${
@@ -608,7 +608,7 @@ const AirAsiaVoiceAssistant = () => {
             <button
               onClick={toggleListening}
               disabled={isLoading}
-              className={`relative z-10 w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition-all duration-300 border-2 ${
+              className={`relative z-10 w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition-all duration-300 border-2  ${
                 isListening
                   ? "scale-110"
                   : isLoading
